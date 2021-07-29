@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+	
+		<meta charset="ISO-8859-1">
+		<title>Loucademia</title>
+		<link rel="stylesheet" type="text/css" href="css/Loucademia_Estilo.css">
+		
+	</head>
+
+	<body>
+	
+		<header>
+			<img src="images/Loucademia_Logotipo.png">
+			<nav>
+				<div>
+					<a href="novoAluno.html">Novo aluno</a><br>
+					<a href="pesquisaDeAluno.html">Pesquisa de aluno</a><br>
+					<a href="controleDeAcesso.html">Controle de acesso</a><br>
+					<a href="relatoriosDeEntradaSaida.html">Relatórios de Entradas e Saídas</a><br>
+					<a href="relatoriosDeSituacoes.html">Relatórios de Situações</a><br>
+				</div>
+			</nav>
+		</header>
+	<!-- Cabeçalho - FIM -->
+	
+		<h1>Relatório de Situações</h1>
+	
+		<div id="infoMessage">
+		(aqui vai eventual mensagem de sistema confirmando sucesso ou erro) <br>
+		</div>
+		
+		<br>
+		
+		<form>
+			<fieldset>
+				<legend>Parâmetros de Entradas e Saídas</legend>
+				
+				<label for="situacao">Situação</label><br>
+				<select name="situacao" id="situacao">
+					<option>Ativo</option>
+					<option>Inativo</option>
+					<option>Com pendência</option>
+				</select>
+				
+
+			</fieldset>
+			
+			<br>
+			
+			<input type="submit" value="Gerar Relatório">
+		
+		</form>
+		
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>NOME</th>
+				<th>SITUAÇÃO</th>
+				<th>CELULAR</th>
+				<th>FIXO</th>
+				<th>AÇÕES</th>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>LUCAS DE PAULO ALVES</td>
+				<td>Ativo</td>
+				<td>11 95484-8304</td>
+				<td>11 4091-4091</td>				
+				<td>
+					<input type="button" value="Editar">
+				</td>
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>LUAN DE PAULO ALVES</td>
+				<td>Ativo</td>
+				<td>11 94574-8774</td>
+				<td>11 4091-1414</td>				
+				<td>
+					<input type="button" value="Editar">
+				</td>
+			</tr>
+			<tr>
+				<td>003</td>
+				<td>CASSIA SANTANA DE SOUZA ALVES</td>
+				<td>Inativo</td>
+				<td>11 93215-1444</td>
+				<td>11 4088-4774</td>				
+				<td>
+					<input type="button" value="Editar">
+				</td>
+			</tr>
+			<tr>
+				<td>004</td>
+				<td>MARIA JOSE DE PAULO</td>
+				<td>Ativo</td>
+				<td>11 99874-7965</td>
+				<td>11 4744-1235</td>				
+				<td>
+					<input type="button" value="Editar">
+				</td>
+			</tr>
+		
+		</table>
+	
+	<!-- Rodapé - Inicio -->
+		
+	</body>
+
+</html>
