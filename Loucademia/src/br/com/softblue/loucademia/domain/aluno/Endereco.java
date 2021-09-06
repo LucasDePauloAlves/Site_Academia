@@ -66,12 +66,13 @@ public class Endereco implements Serializable {
 		this.cep = cep;
 	}
 	
+	
+	
 	@Override
 	public String toString() {
 		return "Endereco [rua=" + rua + ", numero=" + numero + ", complemento=" + complemento + ", cidade=" + cidade
 				+ ", estado=" + estado + ", cep=" + cep + "]";
 	}
-	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -125,6 +126,5 @@ public class Endereco implements Serializable {
 			return false;
 		return true;
 	}
-	
 	
 }

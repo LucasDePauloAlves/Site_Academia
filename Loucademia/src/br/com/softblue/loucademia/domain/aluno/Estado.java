@@ -43,6 +43,7 @@ public class Estado implements Serializable {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		result = prime * result + ((sigla == null) ? 0 : sigla.hashCode());
 		return result;
 	}
@@ -56,6 +57,11 @@ public class Estado implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Estado other = (Estado) obj;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
 		if (sigla == null) {
 			if (other.sigla != null)
 				return false;
@@ -63,6 +69,5 @@ public class Estado implements Serializable {
 			return false;
 		return true;
 	}
-	
 	
 }
