@@ -9,7 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.Enumerated;
 import javax.persistence.Id;
 import javax.persistence.Table;
-//gerando token
+//gerando tokenn
 @Entity
 @Table(name = "ALUNO")
 public class Aluno implements Serializable {
